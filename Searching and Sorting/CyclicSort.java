@@ -1,6 +1,7 @@
 
 import java.util.Arrays;
-
+//Time complexity: O(n2)
+//Space complexity: O(1)
 public class CyclicSort {
     public static void main(String[] args) {
         int[] arr1 = {2,1,3,4};
