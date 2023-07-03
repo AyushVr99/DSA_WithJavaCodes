@@ -1,7 +1,8 @@
 package com.Data_Structures.Sorting;
 
 import java.util.Arrays;
-
+//Time complexity: O(nlogn)
+//Space complexity: O(n)
 public class MergeSort {
 
     public static void main(String[] args) {
