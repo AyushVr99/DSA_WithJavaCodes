@@ -5,7 +5,7 @@ import static com.N_AryTree.N_AryTree.*;
 public class Main {
     public static void main(String[] args) {
         int[] values = {10,1,3,-1,5,-1,7,-1,-1,2,4,5,-1,-1,-1,9,-1,15,22,-1,23,-1,24};
-        N_AryTree.Node root = null;
+        Node root = null;
         root = buildTree(values,root);
 //        display(root);
 
