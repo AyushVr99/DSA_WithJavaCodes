@@ -27,7 +27,7 @@ public class CountSort {
         }
 
         // Taking prefix sum of the freq array
-        for (int i = 1; i < arr.length; i++)
+        for (int i = 1; i < freq.length; i++)
         {
             freq[i] = freq[i]+freq[i-1];
         }
