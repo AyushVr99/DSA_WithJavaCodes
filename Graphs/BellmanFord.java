@@ -44,7 +44,7 @@ public class BellmanFord {
                 for (int k = 0; k < graph.get(j).size(); k++)
                 {
                     Edge e = graph.get(j).get(k);
-                    if (dist[e.source]+ e.wt < dist[e.des])
+                    if (dist[e.source]!= Integer.MAX_VALUE && dist[e.source]+ e.wt < dist[e.des])
                     {
                         dist[e.des] = dist[e.source]+ e.wt;
                     }
@@ -57,7 +57,7 @@ public class BellmanFord {
             for (int k = 0; k < graph.get(j).size(); k++)
             {
                 Edge e = graph.get(j).get(k);
-                if (dist[e.source]+ e.wt < dist[e.des])
+                if (dist[e.source]!= Integer.MAX_VALUE  && dist[e.source]+ e.wt < dist[e.des])
                 {
                     System.out.println("Negative weight cycle is present");
                 }
