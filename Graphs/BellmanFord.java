@@ -3,7 +3,7 @@ package com.Graphs;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//This algorithm is mainly used for negative weight cycles
+//This algorithm is used to find shortest distance. It does not work with negative weight cycles
 //Time complexity: O(V*E)
 public class BellmanFord {
     static class Edge{
