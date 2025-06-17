@@ -59,6 +59,7 @@ public class HashMapImplementation {
 
             if (nodeIndex == -1){
                 mapStructure[bucketIndex].add(new Node(key, value));
+                n++;
             }
             else{
                 Node node = mapStructure[bucketIndex].get(nodeIndex);
@@ -90,6 +91,8 @@ public class HashMapImplementation {
 
             LinkedList<Node> list = mapStructure[bucketIndex];
             Node node =  list.remove(nodeIndex);
+            n--;
+            
             return node.value;
         }
         public boolean isEmpty(){
