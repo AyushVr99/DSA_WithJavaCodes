@@ -24,7 +24,7 @@ public class BreadthFirstSearch {
         {
             if (!vis[i])
             {
-                bfs(graph,vis,0);
+                bfs(graph,vis,i);
             }
         }
 
