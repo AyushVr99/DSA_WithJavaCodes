@@ -12,7 +12,7 @@ public class HashMapImplementation {
             }
         }
         private int n; //number of nodes
-        private final int N; //number of buckets
+        private int N; //number of buckets
         private LinkedList<Node>[] mapStructure;
 
         @SuppressWarnings("unchecked")
@@ -39,11 +39,14 @@ public class HashMapImplementation {
         }
         private void rehash(){
             LinkedList<Node>[] oldStructure = mapStructure;
-            mapStructure = new LinkedList[N * 3];
+            N = N * 3;
+            mapStructure = new LinkedList[N];
 
             for (int i = 0; i < mapStructure.length; i++) {
                 mapStructure[i] = new LinkedList<>();
             }
+
+            n = 0;
 
             for (int i = 0; i < oldStructure.length; i++) {
                 for (int j = 0; j < oldStructure[i].size(); j++) {
